@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Footer</title>
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: linear-gradient(135deg, #f56a98, #fa497e);
+        color: #fff;
+      }
+      .footer-content {
+        text-align: center;
+        padding: 20px;
+      }
+      .footer-content p {
+        margin: 5px 0;
+        font-size: 1.1em;
+      }
+      .footer-content a {
+        color: #ffddf4;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease, transform 0.2s ease-in-out;
+      }
+      .footer-content a:hover {
+        color: #ffffff;
+        transform: scale(1.1);
+      }
+      .running-text {
+        overflow: hidden;
+        white-space: nowrap;
+        position: relative;
+        width: 100%;
+        font-size: 1.2em;
+        margin-top: 15px;
+        color: #ffccff;
+        font-weight: bold;
+      }
+      .running-text span {
+        display: inline-block;
+        position: absolute;
+        animation: marquee 10s linear infinite;
+      }
+      @keyframes marquee {
+        from {
+          transform: translateX(100%);
+        }
+        to {
+          transform: translateX(-100%);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="footer-content">
+      <p>&copy; 2023 Aisyah Dwi Pratiwi</p>
+      <p>
+        Contact:
+        <a href="mailto:aisyahdwipratiwi487@gmail.com"
+          >aisyahdwipratiwi487@gmail.com</a
+        >
+      </p>
+      </div>
+    </div>
+  </body>
+</html>

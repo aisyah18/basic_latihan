@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Galeri Futuristik</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f6f6f7, #e56cab); /* Gradien latar belakang gelap */
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 40px;
+            max-width: 1200px;
+            width: 90%;
+            text-align: center;
+        }
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+        .gallery-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .gallery-item:hover::before {
+            opacity: 1;
+        }
+        .marquee-container {
+            margin-top: 30px;
+            width: 100%;
+            overflow: hidden;
+        }
+        marquee {
+            font-size: 1.2em;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="marquee-container">
+        <marquee behavior="scroll" direction="right">
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="img1.jpeg" alt="Gambar 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="img2.jpeg" alt="Gambar 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="img3.jpeg" alt="Gambar 3">
+                </div>
+            </div>
+        </marquee>
+    </div>
+</body>
+</html>

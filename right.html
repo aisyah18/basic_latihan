@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>material-container</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Comic+Sans+MS&display=swap");
+
+      body {
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background: linear-gradient(135deg, #ffb6c1, #ffe4e1); /* Pink pastel */
+        color: #ff4081;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+      .material-container {
+        background-color: rgba(
+          255,
+          240,
+          245,
+          0.95
+        ); /* Pink muda semi-transparan */
+        padding: 5px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(255, 105, 180, 0.3);
+        max-width: 400px;
+        width: 80%;
+        text-align: center;
+        border: 3px dashed #ff69b4;
+      }
+      .material-container h2 {
+        color: #ff1493;
+        margin-bottom: 10px;
+        font-size: 1em;
+        text-shadow: 2px 2px #ff69b4;
+      }
+      .material-list {
+        list-style: none;
+        padding: 0;
+      }
+      .material-list li {
+        margin-bottom: 12px;
+      }
+      .material-list a {
+        background-color: #ff69b4;
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 15px;
+        border-radius: 15px;
+        font-weight: bold;
+        transition: all 0.3s ease-in-out;
+        display: inline-block;
+      }
+      .material-list a:hover {
+        background-color: #ff1493;
+        transform: scale(1.1);
+        box-shadow: 0 4px 10px rgba(255, 105, 180, 0.5);
+      }
+
+      .cute-decoration {
+        font-size: 1.5em;
+        color: #ff1493;
+        margin-top: 10px;
+        animation: bounce 1.5s infinite alternate;
+      }
+      @keyframes bounce {
+        from {
+          transform: translateY(0);
+        }
+        to {
+          transform: translateY(-5px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="material-container">
+      <h1>Materi Fullstack</h1>
+      <ul class="material-list">
+        <li>
+          <a
+            href="https://youtu.be/k45zheSbMvY?si=pLGaLEAOY0vvkH9O"
+            target="_blank"
+            >DESAIGN WEB</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://youtu.be/qk3R3mYiuPA?si=JBObt8pt3A8hcm9O"
+            target="_blank"
+            >UI/UX</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://youtu.be/lTMZxWMjXQU?si=lLbE-3J5BuvD-cMZ"
+            target="_blank"
+            >GITHUB</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://youtu.be/mD6uSGSjgr4?si=IfmMOHoa7hf654Am"
+            target="_blank"
+            >PEMOGRAMAN JAVA SCRIPT</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://youtu.be/kcnwI_5nKyA?si=iBJ1H7nWC8uJ2K7Z"
+            target="_blank"
+            >REACT JS DASAR</a
+          >
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
